@@ -1,0 +1,41 @@
+.crossfade-frame, .slide-frame, .caption-frame {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.caption-frame img, .caption-frame p {
+  display: block;
+  position: relative;
+}
+
+.caption-frame img {
+  z-index: 1;
+}
+
+.caption-frame p {
+  z-index: 2;
+  padding: 10px;
+  background: rgba(255,255,255,0.75);
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  z-index: 1;
+}
+
+.top, .bottom {
+  display: block;
+  width: 400px;
+}
