@@ -3,11 +3,11 @@ $(document).ready(function(){
   //Cross Fade
 
   function crossFadeMouseOn() {
-    $(this).find('.front').fadeTo("slow", 0);
+    $(this).find('img').eq(0).fadeTo("slow", 0);
   }
 
   function crossFadeMouseOff() {
-    $(this).find('.front').fadeTo("fast", 1);
+    $(this).find('img').eq(0).fadeTo("fast", 1);
   }
 
   $('.crossfade-frame').hover(crossFadeMouseOn, crossFadeMouseOff);
@@ -15,9 +15,9 @@ $(document).ready(function(){
   //Slide
 
   $('.slide-frame').hover(function () {
-    $(this).find('.top').slideUp("slow");
+    $(this).find('img').eq(0).slideUp("slow");
   }, function () {
-    $(this).find('.top').slideDown("fast");
+    $(this).find('img').eq(0).slideDown("fast");
   });
 
   // Caption Toggle

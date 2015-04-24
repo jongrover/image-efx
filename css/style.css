@@ -1,4 +1,6 @@
-.crossfade-frame, .slide-frame, .caption-frame {
+.crossfade-frame, 
+.slide-frame, 
+.caption-frame {
   width: 400px;
   height: 400px;
   overflow: hidden;
@@ -6,7 +8,8 @@
   float: left;
 }
 
-.caption-frame img, .caption-frame p {
+.caption-frame img, 
+.caption-frame p {
   display: block;
   position: relative;
 }
@@ -21,21 +24,22 @@
   background: rgba(255,255,255,0.75);
 }
 
-.front, .back {
+.crossfade-frame img:first-child, 
+.crossfade-frame img:last-child {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.front {
+.crossfade-frame img:first-child {
   z-index: 2;
 }
 
-.back {
+.crossfade-frame img:last-child {
   z-index: 1;
 }
 
-.top, .bottom {
+.slide-frame img {
   display: block;
   width: 400px;
 }
